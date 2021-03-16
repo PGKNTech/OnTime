@@ -1,0 +1,15 @@
+body {
+  background-color: #000000;
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+/* the time */
+div #clock {
+  background-color: #0b0909;
+  color: #22fb00;
+  font-family: 'Orbitron';
+  font-size: 500%;
+  text-align: center;                                           
+}
