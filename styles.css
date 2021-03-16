@@ -1,0 +1,22 @@
+body {
+  background-color: #000000;
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+.clock-container #clock {
+  background-color: #0b0909;
+  color: #22fb00;
+  font-family: 'Orbitron';
+  font-size: 150%;
+}
+
+/* in case id style dont work */
+span {
+  background-color: #0b0909;
+  color: #22fb00;
+  font-family: 'Orbitron';
+  font-size: 150%;
+}
+
