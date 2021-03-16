@@ -1,49 +1,25 @@
-var midday
-
-function mainClock() {
-    var date = new Date();
-    var hours = updateHours(date.getHours());
-    var minutes = updateTime(date.getMinutes());
-    var seconds = updateTime(date.getSeconds());
-
-    document.querySelector("#clock").innerHTML = hours + ":" + minutes + ":" + seconds + midday;
-    setTimeout(mainClock, 1000);
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  var midday = "AM";
+  midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
+  hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec + " " + midday; /* adding time to the div */
+    var t = setTimeout(currentTime, 1000); /* setting timer */
 }
 
-function updateTime(n) {
-    if(n < 10) {
-        return "0" + n;
-    }
-    else {
-        return n;
-    }
+function updateTime(k) { /* appending 0 before time elements if less than 10 */
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
 }
 
-function updateHours(n) {
-    if(n < 10 && n != 0) {
-        midday = "AM";
-        return "0" + n;
-    }
-    else if(n == 10 || n == 11) {
-        midday = "AM";
-        return n;
-    }
-    else if(n == 12) {
-        midday = "PM";
-        return n;
-    }
-    else if(n > 12 && n < 22) {
-        midday = "PM";
-        return "0" + n % 12;
-    }
-    else if(n == 22 || n == 23) {
-        midday = "PM";
-        return n % 12;
-    }
-    else if(n == 0) {
-        midday = "AM"
-        return n = 12;
-    }
-
-    return midday
-}
+currentTime();
