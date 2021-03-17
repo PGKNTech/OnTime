@@ -1,4 +1,5 @@
-@media screen and (max-width: 2000px) {
+/* laptops to computers to tv's */
+@media only screen and (min-width: 915px) and (max-width: 2000px) {
 body {
   background-color: #000000;
   max-width: 80%;
@@ -15,7 +16,7 @@ div {
   text-align: center;                                           
 }
 
-h1, h2, a {
+h1, h2 {
   color: #22fb00;
   font-family: 'Quicksand';
   font-size: 300%;
@@ -23,8 +24,34 @@ h1, h2, a {
   text-decoration: none;
 }
 }
+/* big phones to tablet screen size */
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+body {
+  background-color: #000000;
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+}
 
-@media screen and (max-width: 700px) {
+/* the time */
+div {
+  background-color: #0b0909;
+  color: #22fb00;
+  font-family: 'Orbitron';
+  font-size: 450%;
+  text-align: center;                                           
+}
+
+h1, h2 {
+  color: #22fb00;
+  font-family: 'Quicksand';
+  font-size: 300%;
+  text-align: center;
+  text-decoration: none;
+}
+}
+/* Phone screens */
+@media only screen and (min-width: 630px) and (max-width: 720px) {
 body {
   background-color: #000000;
   max-width: 100%;
@@ -41,7 +68,7 @@ div {
   text-align: center;                                           
 }
 
-h1, h2, {
+h1, h2 {
   color: #22fb00;
   font-family: 'Quicksand';
   font-size: 200%;
@@ -49,8 +76,8 @@ h1, h2, {
   text-decoration: none;
 }
 }
-
-@media screen and (max-width: 600px) {
+/* normal budget phone size */
+@media only screen and (min-width: 430px) and (max-width: 630px) {
 body {
   background-color: #000000;
   max-width: 100%;
@@ -67,7 +94,7 @@ div {
   text-align: center;                                           
 }
 
-h1, h2, {
+h1, h2 {
   color: #22fb00;
   font-family: 'Quicksand';
   font-size: 200%;
@@ -75,8 +102,8 @@ h1, h2, {
   text-decoration: none;
 }
 }
-
-@media screen and (max-width: 430px) {
+/* For cheapskate people who still buy the iphone 5 and below */
+@media only screen and (min-width: 420px) and (max-width: 430px) {
 body {
   background-color: #000000;
   max-width: 100%;
@@ -89,15 +116,45 @@ div {
   background-color: #0b0909;
   color: #22fb00;
   font-family: 'Orbitron';
-  font-size: 230%;
-  text-align: center;                                           
+  font-size: 300%;
+  text-align: left;
+  width: 100%;
 }
 
-h1, h2, {
+h1, h2 {
   color: #22fb00;
   font-family: 'Quicksand';
-  font-size: 90%;
+  font-size: 110%;
   text-align: center;
   text-decoration: none;
+  margin: 60px;
+}
+}
+/* For people who still use smaller phones */
+@media only screen and (min-width: 410px) and (max-width: 420px) {
+body {
+  background-color: #000000;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+/* the time */
+div {
+  background-color: #0b0909;
+  color: #22fb00;
+  font-family: 'Orbitron';
+  font-size: 280%;
+  text-align: left;
+  width: 100%;
+}
+
+h1, h2 {
+  color: #22fb00;
+  font-family: 'Quicksand';
+  font-size: 110%;
+  text-align: center;
+  text-decoration: none;
+  margin: 60px;
 }
 }
